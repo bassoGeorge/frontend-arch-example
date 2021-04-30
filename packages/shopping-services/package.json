@@ -1,0 +1,16 @@
+{
+  "name": "shopping-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mb --configfile imposters.ejs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vamsi",
+  "license": "ISC",
+  "dependencies": {
+    "mbgen": "^1.0.1",
+    "mountebank": "^2.4.0"
+  }
+}

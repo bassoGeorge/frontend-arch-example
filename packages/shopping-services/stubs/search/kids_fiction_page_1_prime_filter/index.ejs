@@ -1,0 +1,26 @@
+{
+  "predicates": [
+    {
+      "equals": {
+        "path": "/search",
+        "query": {
+          "filter": "prime"
+        },
+        "method": "GET"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 200,
+        "headers": {
+          "Content-type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*"
+        },
+        "body": <% include response.ejs %>
+      }
+    }
+  ]
+}

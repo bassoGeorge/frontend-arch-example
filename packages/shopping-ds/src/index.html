@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/amazon-ds.esm.js"></script>
+    <script nomodule src="/build/amazon-ds.js"></script>
+  </head>
+  <body>
+    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <product-rating rating="4.5" rating-count="100"></product-rating>
+    <clickable-header level="2"><span slot="text">Hello world!</span></clickable-header>
+    <display-text level="3" text="1 January 2011"></display-text>
+    <simple-list>
+      <simple-list-item><div>item-1</div></simple-list-item>
+      <simple-list-item><div>item-2</div></simple-list-item>
+      <simple-list-item><div>item-3</div></simple-list-item>
+    </simple-list>
+    <primary-button label="say hi" onClick="sayHi()"></primary-button>
+    <script>
+      function sayHi() {
+        console.log(event);
+        console.log('hi');
+      }
+    </script>
+  </body>
+</html>

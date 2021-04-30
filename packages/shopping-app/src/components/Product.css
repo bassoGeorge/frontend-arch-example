@@ -1,0 +1,25 @@
+.product {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.product.condensed {
+    grid-template-columns: 200px;
+}
+
+.product-image {
+    height: 218px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+primary-button {
+    grid-column-start: 1;
+}
+
+.product .details {
+    display: grid;
+    grid-template-rows: max-content;
+    row-gap: 10px;
+}

@@ -1,0 +1,10 @@
+.products {
+    list-style-type: none;
+    display: grid;
+    row-gap: 20px;
+}
+
+.products.grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
