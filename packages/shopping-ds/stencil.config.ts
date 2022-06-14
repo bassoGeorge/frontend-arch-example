@@ -2,11 +2,11 @@ import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
-  namespace: 'amazon-ds',
+  namespace: 'shopping-ds',
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: 'amazon-ds',
-      proxiesFile: '../amazon-ds-react/src/components.ts',
+      componentCorePackage: 'shopping-ds',
+      proxiesFile: '../shopping-ds-react/src/components.ts',
     }),
     {
       type: 'dist',

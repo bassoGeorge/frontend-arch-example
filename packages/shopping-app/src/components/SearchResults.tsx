@@ -1,9 +1,7 @@
-import { SimpleList, SimpleListItem } from "shopping-ds-react";
-import React, { useContext, useMemo } from "react";
-import { isSwitchStatement } from "typescript";
+import React, {useContext, useMemo} from "react";
 import LayoutContext from "../lib/LayoutContext";
-import { Layout } from "../model/Layout";
-import { Product, ProductView, SearchResults } from "../model/Search";
+import {Layout} from "../model/Layout";
+import {Product, ProductView, SearchResults} from "../model/Search";
 import ProductComponent from "./Product";
 import "./SearchResults.css";
 
@@ -14,12 +12,7 @@ export interface Props {
 
 export default ({ results, onAddToCart }: Props) => {
   const layout = useContext(LayoutContext);
-  let productView = ProductView.Expanded;
-  switch(layout) {
-      case Layout.Grid:
-          productView = ProductView.Condensed
-          break;
-  }
+  const productView: ProductView = layout == Layout.Grid ? ProductView.Expanded : ProductView.Condensed;
 
   return useMemo(
     () => (

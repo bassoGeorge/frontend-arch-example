@@ -16,7 +16,7 @@ export default ({ product, onAddToCart, view }: Props) => {
             <img className="product-image" src={`/assets/${product.image}`} />
             <div className="details">
                 <span className="product-title">{product.title}</span>
-                <PrimaryButton label="Add to cart" onClick={onAddToCart}></PrimaryButton>
+                <PrimaryButton label="Add to cart" onClick={(event) => onAddToCart(event as unknown as MouseEvent)}></PrimaryButton>
             </div>
         </div>
     )

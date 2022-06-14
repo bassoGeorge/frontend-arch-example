@@ -15,10 +15,10 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "shopping-ds": "file:shopping-ds-0.0.1.tgz",
+    "shopping-ds-react": "file:shopping-ds-react-1.0.0.tgz",
     "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1",
-    "shopping-ds": "1.0.0",
-    "shopping-ds-react": "1.0.0"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

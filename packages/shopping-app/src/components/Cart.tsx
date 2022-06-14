@@ -8,6 +8,6 @@ export interface Props {
 
 export default ({ items }: Props) => {
   return (
-    <IconButtonWithBubble bubbleText={items.size}></IconButtonWithBubble>
+    <IconButtonWithBubble bubbleText={items.size + ''}></IconButtonWithBubble>
   );
 };

@@ -45,7 +45,7 @@ export function CartActions(cartService: CartService): CartActions {
       }
       return [
           cart,
-          new Promise((resolve, reject) => {})
+          cartService.addProduct(product).then(status => ({ status, oldCart: cart}))
       ];
     },
   };
